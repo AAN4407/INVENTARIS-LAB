@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="700.0" spacing="15.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AppController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label text="INVENTARIS LAB">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+          <Label text="By Aira">
+              <font>
+                  <Font name="System Bold" size="14.0" />
+              </font>
+          </Label>
+
+        <VBox spacing="10.0">
+            <children>
+
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <Label prefWidth="100.0" text="Nama" />
+                        <TextField fx:id="field1" alignment="BOTTOM_CENTER" prefWidth="200.0" promptText="Masukan Nama Barang" />
+                    </children>
+                </HBox>
+
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <Label prefWidth="100.0" text="Jumlah" />
+                        <TextField fx:id="field2" alignment="BOTTOM_CENTER" prefWidth="200.0" promptText="Masukan Jumlah Barang" />
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+        </VBox>
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+         <children>
+                <Button fx:id="addButton" mnemonicParsing="false" onAction="#handleAdd" prefHeight="0.0" prefWidth="100.0" text="Tambah" />
+                <Button fx:id="updateButton" mnemonicParsing="false" onAction="#handleUpdate" prefWidth="100.0" text="Perbaharui" />
+                <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#handleDelete" prefWidth="100.0" text="Hapus" />
+                <Button fx:id="clearButton" mnemonicParsing="false" onAction="#handleClear" prefWidth="100.0" text="Bersih" />
+         </children>
+        </HBox>
+
+        <TableView fx:id="dataTable" prefHeight="300.0">
+            <columns>
+                <TableColumn fx:id="NamaBarang" prefWidth="150.0" text="Nama Barang" />
+                <TableColumn fx:id="Jumlah" prefWidth="150.0" text="Jumlah" />
+            </columns>
+        </TableView>
+
+        <Label fx:id="statusLabel" text="Status: Ready">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font>
+        </Label>
+    </children>
+</VBox>
