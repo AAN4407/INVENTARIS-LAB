@@ -1,6 +1,6 @@
-# JavaFX MVC Template
+# INVENTARIS LAB
 
-Template proyek JavaFX dengan pola Model-View-Controller (MVC) yang siap digunakan.
+Prototype inventaris untuk lab dengan sistem CRUD.
 
 ## Konfigurasi
 
@@ -35,7 +35,7 @@ JavaFX-Template/
 
 ### Model
 - JavaFX Property binding
-- Sample model dengan 3 field
+- Sample model dengan 2 field
 
 ### View
 - SceneBuilder-compatible FXML
@@ -45,7 +45,7 @@ JavaFX-Template/
 ### Controller
 - CRUD operations lengkap (Create, Read, Update, Delete)
 - ObservableList untuk data management
-- TableView dengan 3 kolom
+- TableView dengan 2 kolom
 - Validasi input
 
 ## Cara Menjalankan
@@ -63,18 +63,6 @@ mvn javafx:run
 ### 3. IntelliJ IDEA
 - Import sebagai Maven project
 - Run Main.java
-
-## Cara Menggunakan Template
-
-1. **Copy folder ini** untuk proyek baru
-2. **Edit pom.xml**:
-   - Ubah `groupId`, `artifactId`, `name`, dan `description`
-3. **Edit Main.java**:
-   - Ubah title aplikasi
-   - Ubah author name
-4. **Customize FXML** menggunakan SceneBuilder
-5. **Modify Model** sesuai kebutuhan data
-6. **Update Controller** untuk logika bisnis
 
 ## Build Commands
 
